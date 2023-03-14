@@ -1,0 +1,40 @@
+/* ***************GENERAL*************** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-size: 35px;
+}
+
+/* ***************BODY*************** */
+#container{
+    width: 400px;
+    height: 400px;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.43);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    padding: 8px;
+}

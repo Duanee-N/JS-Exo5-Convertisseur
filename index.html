@@ -1,0 +1,31 @@
+<!DOCTYPEhtml>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>JS-Exo5-Convertisseur</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Valeur en euros</h1>
+            <input type="number" min="1">
+        </div>
+        <script>
+            const container=document.querySelector("#container")
+
+            const input=document.querySelector("input")
+
+            const txt= document.createElement("p")
+            container.appendChild(txt)
+
+            let nb=document.querySelector("input")
+            let displayConvert=txt.cloneNode()
+            nb.addEventListener("input", function(){ 
+                displayConvert.innerHTML="= "+Number((nb.value*6.55957).toFixed(2))+" francs" //pour arrondir à 2 décimales
+            })
+            container.appendChild(displayConvert)
+
+           console.log(nb)
+        </script>
+    </body>
+</html>
